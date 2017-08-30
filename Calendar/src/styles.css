@@ -73,7 +73,7 @@
     }
       .wc-calendar__days-list__item--active {
         color: white;
-        background-color: blue;
+        background: rgba(116,172,241,1);
       }
       .wc-calendar__days-list__item--prev-month,
       .wc-calendar__days-list__item--next-month {
@@ -206,17 +206,18 @@ label.form_label{
 
 .oneEvent{
   width: 100%;
-  color: black;
+  color: white;
   vertical-align: top;
   display: block;
   line-height: normal;
-  margin: 0.5px;
+  margin: 0 0 1% 0;
   padding: 0px;
   font-size: 92%;
   height: 18%;
   text-align: left;
-  background-color: #CCCFD4;
+  background-color: #428A98;
   overflow: hidden;
+  border-radius: 4px;
 }
 
 
