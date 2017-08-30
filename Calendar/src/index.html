@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Calendar</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+<body>
+
+  <h1>Simple Calendar HTML CSS only</h1>
+
+    <div class="calendar"></div>
+    
+        <!-- Testing form START -->
+        <form class="calendar-form">
+          <div class="control-group">
+            <label class="control-label" for="class-input">Class: </label>
+            <input class="control-input" type="text" id="class-input" placeholder="Type class name here..."/>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="date-input">Selected date: </label>
+            <input class="control-input" type="date" id="date-input" placeholder="Type date in format M/D/YYYY..."/>
+          </div>
+          <div class="control-group">
+            <button type="submit">Change</button>
+          </div>
+        </form>
+
+
+        <!-- Add event fomr -->
+<div id="eventForm" class="event">
+    <!-- Form content -->
+    <div class="event-content">
+        <span class="closeForm">&times;</span>
+        <h1>Add event</h1>
+        <div class="form-group">
+            <form (submit)="createEvent()">
+                <div>
+                    <input class="radio-button" id="radio1" type="radio" [(ngModel)]="new_event.type"  name="type" value="practice"  />
+                    <label class="radio_label" for="radio1">Practice</label>
+                    <input class="radio-button" id="radio2" type="radio" [(ngModel)]="new_event.type"  name="type" value="game">
+                    <label class="radio_label" for="radio2">Game</label>
+                    <input class="radio-button" id="radio3" type="radio" [(ngModel)]="new_event.type"  name="type" value="other">
+                    <label class="radio_label" for="radio3">Other</label>
+                </div>
+
+
+                <label class="form_label"  for="title">Title</label>
+                <input   class="form-control"  type="text"  [(ngModel)]="new_event.title" id="title" name="title" placeholder="Title..">
+
+                <div class="date_box">
+                    <label class="form_label"  for="start">Start date:</label>
+                    <input  class="form-control"   type="datetime-local"  [(ngModel)]="new_event.start" id="start" name="start" >
+                </div>
+                <div class="date_box">
+                    <label class="form_label"  for="end">End date:</label>
+                    <input   class="form-control"  type="datetime-local"  [(ngModel)]="new_event.end" id="end" name="end"  >
+                </div>
+
+                <label class="form_label"  for="location">Location:</label>
+                <input   class="form-control"  type="text"  [(ngModel)]="new_event.location" id="location" name="location" placeholder="Location.. e.g: Seattle,WA" >
+
+                <label class="form_label" for="description">Description:</label>
+                <textarea   class="form-control"  type="text"  [(ngModel)]="new_event.description" id="description" name="description" placeholder="Description here.." ></textarea>
+
+                <input class="submitForm" id="submitEvent" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>    
+</div>
+
+<hr>
+
+
+
+
+        
+  <app-root></app-root>
+
+
+
+
+
+
+  <script src="./assets/js/calendar.js">  </script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+
+
+.wc-calendar {
+    background-color: white;
+  }
+  
+    .wc-calendar__header {
+      position: relative;
+      height: 40px;
+      border-bottom: 2px solid gray;
+      overflow: hidden;
+      text-align: center;
+    }
+      .wc-calendar__header__date {
+        display: inline-block;
+      }
+  
+    .wc-calendar__btn {
+      height: 32px;
+      padding: 0 15px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 12px;
+      line-height: 32px;
+      background-color: #4889ff;
+      cursor: pointer;
+    }
+  
+      .wc-calendar__btn:focus,  .wc-calendar__btn:active {
+        outline: none;
+      }
+  
+      .wc-calendar__btn:hover {
+        background-color: blue;
+      }
+    
+      .wc-calendar__btn--prev {
+        float: left;
+      }
+      .wc-calendar__btn--next {
+        float: right;
+      }
+  
+    .wc-calendar__days-names,
+    .wc-calendar__days-list {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+    }
+  
+    .wc-calendar__days-names {
+      border-bottom: 1px solid gray;
+    }
+  
+    .wc-calendar__days-names__item,
+    .wc-calendar__days-list__item {
+      width: 14.2%;
+      flex-grow: 1;
+      text-align: center;
+    }
+  
+    .wc-calendar__days-names__item {
+      padding-top: 10px;
+    }
+  
+    .wc-calendar__days-list__item {
+      height: 100px;
+      line-height: 60px;
+      cursor: pointer;
+      outline: 1px solid gray;
+    }
+      .wc-calendar__days-list__item--active {
+        color: white;
+        background-color: blue;
+      }
+      .wc-calendar__days-list__item--prev-month,
+      .wc-calendar__days-list__item--next-month {
+        color: gray;
+      }
+        .wc-calendar__days-list__item--active.wc-calendar__days-list__item--prev-month,
+        .wc-calendar__days-list__item--active.wc-calendar__days-list__item--next-month {
+          border: 1px solid blue;
+          background-color: white;
+        }
+  
+  /* testing styles */
+  .red-class {
+    background-color: red;
+  }
+  .gray-class {
+    background-color: gray;
+  }
+  .calendar-form {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid gray;
+  }
+    .control-group + .control-group {
+      margin-top: 5px;
+    }
+    .control-label {
+      display: inline-block;
+      width: 94px;
+      font-size: 14px;
+    }
+    .control-input {
+      width: 197px;
+    }
+
+
+
+
+    
+
+/* EVENT  FORM CSS */
+/* The form (background) */
+.event {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Form Content */
+.event-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+/* The Form Close Button */
+.closeForm {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeForm:hover,
+.closeForm:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type=text] {
+    margin:auto;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=datetime-local] {
+    margin: auto;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.submitForm[type=submit] {
+    width: 20%;
+    height: 40px;
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top,#3498db,#23408d);
+    background-image: linear-gradient(180deg,#3498db,#23408d);
+    border-radius: 10px;
+    box-shadow: 0 1px 3px #666;
+    font-family: Regular;
+    color: #fff;
+    font-size: 14px;
+    padding: 3px 12px;
+    cursor: pointer;
+    vertical-align: top;
+    border: none;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+.date_box{
+    display: inline-block;
+    width: 49%;
+}
+label.form_label{
+    float: left;
+}
+
+
+
+.oneEvent{
+  width: 100%;
+  color: black;
+  vertical-align: top;
+  display: block;
+  line-height: normal;
+  margin: 0.5px;
+  padding: 0px;
+  font-size: 92%;
+  height: 18%;
+  text-align: left;
+  background-color: #CCCFD4;
+  overflow: hidden;
+}
+
+
+
+
+
+
+.displayDate{
+  width: 100%;
+  margin: 2% 10% 2% 40%;
+  display: block;
+  line-height: normal;
+  padding: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
